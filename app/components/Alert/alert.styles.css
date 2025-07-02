@@ -1,0 +1,49 @@
+.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: -100%;     /* Изначально элемент вне экрана снизу */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем по горизонтали */
+    width: fit-content;
+    max-width: 300px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    opacity: 0;          /* Начальное состояние прозрачности */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.alert.visible {
+    bottom: 20px;       /* Появляется снизу окна браузера */
+    opacity: 1;         /* Становится непрозрачным */
+}
+
+.alert.info {
+    background-color: #dcf7ff;
+    color: #3c7eba;
+    box-shadow: 0 0 10px rgba(60, 126, 186, 0.5);
+}
+
+.alert.warning {
+    background-color: #fffbef;
+    color: #b46100;
+    box-shadow: 0 0 10px rgba(180, 97, 0, 0.5);
+}
+
+.alert.error {
+    background-color: #ffebee;
+    color: #ba3c3c;
+    box-shadow: 0 0 10px rgba(186, 60, 60, 0.5);
+}
+
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
+    box-shadow: 0 0 10px rgba(21, 87, 36, 0.5);
+}

@@ -1,0 +1,18 @@
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.todo-list-empty-wrapper {
+    position: fixed;   /* Фиксируем позицию относительно окна браузера */
+    top: 147px;
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

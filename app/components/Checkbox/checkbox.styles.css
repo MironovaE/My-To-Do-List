@@ -1,0 +1,28 @@
+.label-checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #00A651; /* Зеленый цвет */
+    border: 1px solid #008C47; /* Рамка зеленого оттенка */
+}
+
+.checkbox:checked {
+    background-color: #008C47; /* Темнее зеленый оттенок при выборе */
+}
+
+.input-label-checkbox {
+    border: none;
+    outline: none;
+    width: auto;
+    padding-left: 8px;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    min-height: 25px;
+    height: 25px;
+}

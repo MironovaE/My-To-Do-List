@@ -1,0 +1,41 @@
+.tab {
+    font-family: Roboto, sans-serif; /* Используем шрифт аналогичный MUI */
+    background-color: white;         /* Белый фон для всех состояний */
+    color: rgba(0, 0, 0, 0.54);      /* Стандартный серый цвет текста MUI */
+    border-radius: 4px 4px 0 0;     /* Закругление сверху */
+    padding: 10px 16px;              /* Отступы внутри кнопки */
+    margin-right: 8px;               /* Пространство между вкладками */
+    cursor: pointer;                 /* Стрелка мыши при наведении */
+    outline: none;                   /* Убираем рамку вокруг кнопки */
+    transition: all 0.3s ease-in-out;/* Плавная анимация перехода */
+    position: relative;              /* Позиционирование индикатора */
+    text-transform: uppercase;       /* Верхний регистр */
+    letter-spacing: 0.02em;          /* Небольшое расстояние между буквами */
+    min-width: 64px;                 /* Минимальная ширина */
+    height: 48px;                    /* Высота */
+    box-sizing: border-box;           /* Чтобы отступы не влияли на размеры */
+    user-select: none;               /* Запрещаем выделение текста */
+}
+
+/* Активная вкладка */
+.active {
+    color: #00A651;                  /* Зеленый цвет активного элемента */
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor; /* Индикатор линии цвета текущего текста */
+        position: absolute;
+        bottom: -2px;                /* Линия снизу */
+        left: 0;
+    }
+}
+
+/* Наведение на неактивную вкладку */
+.tab:hover {
+    background-color: #eeeeee;       /* Очень легкий оттенок серого при наведении */
+}
+
+/* Нажатие на неактивную вкладку */
+.tab:focus
