@@ -1,8 +1,7 @@
-/* Определяем основную тему */
 :root {
-    --primary-color: #4CAF50; /* Основной цвет */
-    --shadow-color: rgba(0, 0, 0, 0.16); /* Цвет тени */
-    --font-size-fab: 24px; /* Размер шрифта */
+    --primary-color: #4CAF50;
+    --shadow-color: rgba(0, 0, 0, 0.16);
+    --font-size-fab: 24px;
 }
 
 .fab-button {
@@ -11,15 +10,15 @@
     align-items: center;
     width: 56px;
     height: 56px;
-    border-radius: 50%; /* Круглая форма */
-    background-color: var(--primary-color); /* Основной цвет */
-    box-shadow: 0 3px 6px var(--shadow-color); /* Тень */
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 6px var(--shadow-color);
     font-size: var(--font-size-fab); /* Размер иконки внутри */
     color: white;
     cursor: pointer;
     outline: none;
     border: none;
-    transition: transform 0.1s ease-in-out; /* Плавный переход */
+    transition: transform 0.1s ease-in-out;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -31,8 +30,8 @@
 
 .fab-button:focus,
 .fab-button:active {
-    outline: none; /* Скрываем выделение при фокусировке */
-    box-shadow: 0 5px 8px var(--shadow-color); /* Более заметная тень при активном состоянии */
+    outline: none;
+    box-shadow: 0 5px 8px var(--shadow-color);
 }
 
 @media screen and (max-width: 768px) {

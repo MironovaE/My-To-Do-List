@@ -1,6 +1,6 @@
 .tab-panel {
     padding: 16px 24px;
     overflow-y: auto;
-    background-color: white; /* Белые фон панели */
-    border-top: 1px solid rgba(0, 0, 0, 0.12); /* Горизонтальный делитель над панелью */
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }

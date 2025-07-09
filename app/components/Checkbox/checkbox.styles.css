@@ -7,12 +7,12 @@
 .checkbox {
     width: 20px;
     height: 20px;
-    background-color: #00A651; /* Зеленый цвет */
-    border: 1px solid #008C47; /* Рамка зеленого оттенка */
+    background-color: #00A651;
+    border: 1px solid #008C47;
 }
 
 .checkbox:checked {
-    background-color: #008C47; /* Темнее зеленый оттенок при выборе */
+    background-color: #008C47;
 }
 
 .input-label-checkbox {

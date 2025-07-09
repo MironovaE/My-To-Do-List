@@ -7,7 +7,7 @@
 }
 
 .todo-list-empty-wrapper {
-    position: fixed;   /* Фиксируем позицию относительно окна браузера */
+    position: fixed;
     top: 147px;
     left: 0;
     right: 0;

@@ -1,5 +1,5 @@
-type SizeType = "small" | "medium" | "large";
+type SizeType = 'small' | 'medium' | 'large'
 
 export interface IIcon {
-    size?: SizeType;
+  size?: SizeType
 }
